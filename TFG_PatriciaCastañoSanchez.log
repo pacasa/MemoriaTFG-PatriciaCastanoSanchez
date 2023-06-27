@@ -1,0 +1,820 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.27)  27 JUN 2023 14:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./TFG_PatriciaCastañoSanchez.tex
+(TFG_PatriciaCastañoSanchez.tex
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-06-16>
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count194
+\Gm@cntv=\count195
+\c@Gm@tempcnt=\count196
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks18
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+) (C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/05/11 v3.89 The Babel package
+\babel@savecnt=\count197
+\U@D=\dimen149
+\l@unhyphenated=\language79
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count198
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.
+ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks21
+\es@quotdepth=\count199
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babe
+l-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) (C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count266
+\float@exts=\toks22
+\float@box=\box51
+\@float@everytoks=\toks23
+\@floatcapt=\box52
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.st
+y
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+9.
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count267
+\l__pdf_internal_box=\box53
+) (TFG_PatriciaCastañoSanchez.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+
+
+LaTeX Warning: Label `fig:image15' multiply defined.
+
+
+LaTeX Warning: Label `fig:image12' multiply defined.
+
+)
+\openout1 = `TFG_PatriciaCastañoSanchez.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen152
+\scratchbox=\box54
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen153
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks25
+)
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+<img/URJ_logo_Color_POS.png, id=1, 359.4228pt x 138.7584pt>
+File: img/URJ_logo_Color_POS.png Graphic file (type png)
+<use img/URJ_logo_Color_POS.png>
+Package pdftex.def Info: img/URJ_logo_Color_POS.png  used on input line 47.
+(pdftex.def)             Requested size: 215.65533pt x 83.25568pt.
+ [1
+
+
+{C:/Users/pcs301/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/pcs
+301/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./img/URJ_logo_
+Color_POS.png>] [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 109.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 109.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 109.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 10
+9.
+
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+[1
+
+
+] [2
+
+] [1] [2
+
+] [3]
+LaTeX Info: Redefining \. on input line 156.
+LaTeX Info: Redefining \% on input line 156.
+ [4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+[5]
+LaTeX Info: Redefining \. on input line 188.
+LaTeX Info: Redefining \% on input line 188.
+ [6] (TFG_PatriciaCastañoSanchez.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [7
+
+])
+\tf@toc=\write3
+\openout3 = `TFG_PatriciaCastañoSanchez.toc'.
+
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
+ [8]
+(TFG_PatriciaCastañoSanchez.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write4
+\openout4 = `TFG_PatriciaCastañoSanchez.lof'.
+
+ [9
+
+
+]
+LaTeX Info: Redefining \. on input line 204.
+LaTeX Info: Redefining \% on input line 204.
+ [10
+
+]
+Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
+
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+
+ []
+
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 259.
+LaTeX Info: Redefining \% on input line 259.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
+
+ []
+
+LaTeX Info: Redefining \. on input line 279.
+LaTeX Info: Redefining \% on input line 279.
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
+
+ []
+
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+[4]
+LaTeX Info: Redefining \. on input line 324.
+LaTeX Info: Redefining \% on input line 324.
+ [5]
+LaTeX Info: Redefining \. on input line 324.
+LaTeX Info: Redefining \% on input line 324.
+ [6
+
+]
+Cap\'{\i }tulo 2.
+[7
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+69.
+ (C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+LaTeX Info: Redefining \. on input line 384.
+LaTeX Info: Redefining \% on input line 384.
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 408--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
+
+ []
+
+LaTeX Info: Redefining \. on input line 413.
+LaTeX Info: Redefining \% on input line 413.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 414--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--425
+
+ []
+
+LaTeX Info: Redefining \. on input line 433.
+LaTeX Info: Redefining \% on input line 433.
+[10]
+Cap\'{\i }tulo 3.
+[11
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
+
+ []
+
+LaTeX Info: Redefining \. on input line 485.
+LaTeX Info: Redefining \% on input line 485.
+[12]
+Overfull \hbox (2.57402pt too wide) in paragraph at lines 490--491
+[]\OT1/ptm/m/n/12 Escalabilidad y ren-di-mien-to: Ora-cle Da-ta-ba-se est[]a di
+-se[]nado pa-ra ma-ne-jar gran-des vol[]ume-
+ []
+
+LaTeX Info: Redefining \. on input line 501.
+LaTeX Info: Redefining \% on input line 501.
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 508--510
+
+ []
+
+LaTeX Info: Redefining \. on input line 520.
+LaTeX Info: Redefining \% on input line 520.
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 533--535
+
+ []
+
+LaTeX Info: Redefining \. on input line 536.
+LaTeX Info: Redefining \% on input line 536.
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 536--538
+
+ []
+
+LaTeX Info: Redefining \. on input line 554.
+LaTeX Info: Redefining \% on input line 554.
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 561--563
+
+ []
+
+LaTeX Info: Redefining \. on input line 574.
+LaTeX Info: Redefining \% on input line 574.
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 589--591
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--594
+
+ []
+
+LaTeX Info: Redefining \. on input line 594.
+LaTeX Info: Redefining \% on input line 594.
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 595--597
+
+ []
+
+LaTeX Info: Redefining \. on input line 613.
+LaTeX Info: Redefining \% on input line 613.
+[19]
+LaTeX Info: Redefining \. on input line 624.
+LaTeX Info: Redefining \% on input line 624.
+ [20]
+Cap\'{\i }tulo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--639
+
+ []
+
+[21
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 661--663
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--672
+
+ []
+
+LaTeX Info: Redefining \. on input line 672.
+LaTeX Info: Redefining \% on input line 672.
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 679--681
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 692--694
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--706
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
+
+ []
+
+LaTeX Info: Redefining \. on input line 718.
+LaTeX Info: Redefining \% on input line 718.
+[24] [25]
+LaTeX Info: Redefining \. on input line 729.
+LaTeX Info: Redefining \% on input line 729.
+ [26
+
+]
+Cap\'{\i }tulo 5.
+<img/image01.png, id=135, 839.38594pt x 444.91219pt>
+File: img/image01.png Graphic file (type png)
+<use img/image01.png>
+Package pdftex.def Info: img/image01.png  used on input line 743.
+(pdftex.def)             Requested size: 426.78757pt x 226.21654pt.
+[27
+
+ <./img/image01.png (PNG copy)>]
+<img/image02.png, id=139, 922.19531pt x 381.67593pt>
+File: img/image02.png Graphic file (type png)
+<use img/image02.png>
+Package pdftex.def Info: img/image02.png  used on input line 752.
+(pdftex.def)             Requested size: 426.79008pt x 176.63882pt.
+<img/image03.png, id=140, 837.88031pt x 441.90094pt>
+File: img/image03.png Graphic file (type png)
+<use img/image03.png>
+Package pdftex.def Info: img/image03.png  used on input line 761.
+(pdftex.def)             Requested size: 426.78912pt x 225.09004pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--768
+
+ []
+
+LaTeX Info: Redefining \. on input line 768.
+LaTeX Info: Redefining \% on input line 768.
+[28 <./img/image02.png (PNG copy)> <./img/image03.png (PNG copy)>]
+<img/image04.png, id=144, 667.74469pt x 341.02406pt>
+File: img/image04.png Graphic file (type png)
+<use img/image04.png>
+Package pdftex.def Info: img/image04.png  used on input line 775.
+(pdftex.def)             Requested size: 426.80493pt x 217.97365pt.
+<img/image05.png, id=145, 536.75531pt x 371.13657pt>
+File: img/image05.png Graphic file (type png)
+<use img/image05.png>
+Package pdftex.def Info: img/image05.png  used on input line 786.
+(pdftex.def)             Requested size: 329.20572pt x 227.62752pt.
+
+Underfull \vbox (badness 4084) has occurred while \output is active []
+
+ [29 <./img/image04.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 792--794
+
+ []
+
+<img/image06.png, id=150, 961.34157pt x 75.28125pt>
+File: img/image06.png Graphic file (type png)
+<use img/image06.png>
+Package pdftex.def Info: img/image06.png  used on input line 801.
+(pdftex.def)             Requested size: 426.79083pt x 33.42136pt.
+<img/image07.png, id=151, 737.75626pt x 515.67656pt>
+File: img/image07.png Graphic file (type png)
+<use img/image07.png>
+Package pdftex.def Info: img/image07.png  used on input line 810.
+(pdftex.def)             Requested size: 325.64941pt x 227.62228pt.
+
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 814.
+LaTeX Info: Redefining \% on input line 814.
+ [30 <./img/image05.png (PNG copy)> <./img/image06.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 815--817
+
+ []
+
+<img/image08.png, id=155, 863.47594pt x 155.07938pt>
+File: img/image08.png Graphic file (type png)
+<use img/image08.png>
+Package pdftex.def Info: img/image08.png  used on input line 824.
+(pdftex.def)             Requested size: 426.7829pt x 76.64975pt.
+<img/image09.png, id=156, 739.26187pt x 490.08093pt>
+File: img/image09.png Graphic file (type png)
+<use img/image09.png>
+Package pdftex.def Info: img/image09.png  used on input line 833.
+(pdftex.def)             Requested size: 343.34712pt x 227.61607pt.
+[31 <./img/image07.png (PNG copy)> <./img/image08.png (PNG copy)>]
+<img/image10.png, id=160, 739.26187pt x 438.8897pt>
+File: img/image10.png Graphic file (type png)
+<use img/image10.png>
+Package pdftex.def Info: img/image10.png  used on input line 840.
+(pdftex.def)             Requested size: 383.41444pt x 227.62793pt.
+<img/image11.png, id=161, 922.94812pt x 188.20313pt>
+File: img/image11.png Graphic file (type png)
+<use img/image11.png>
+Package pdftex.def Info: img/image11.png  used on input line 849.
+(pdftex.def)             Requested size: 426.7864pt x 87.02821pt.
+LaTeX Info: Redefining \. on input line 853.
+LaTeX Info: Redefining \% on input line 853.
+ [32 <./img/image09.png (PNG copy)> <./img/image10.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 854--856
+
+ []
+
+<img/image12.png, id=165, 922.94812pt x 179.92218pt>
+File: img/image12.png Graphic file (type png)
+<use img/image12.png>
+Package pdftex.def Info: img/image12.png  used on input line 863.
+(pdftex.def)             Requested size: 426.7864pt x 83.19897pt.
+<img/image13.png, id=166, 1217.2978pt x 451.6875pt>
+File: img/image13.png Graphic file (type png)
+<use img/image13.png>
+Package pdftex.def Info: img/image13.png  used on input line 872.
+(pdftex.def)             Requested size: 426.78502pt x 158.36179pt.
+<img/image14.png, id=167, 598.48593pt x 54.9553pt>
+File: img/image14.png Graphic file (type png)
+<use img/image14.png>
+Package pdftex.def Info: img/image14.png  used on input line 881.
+(pdftex.def)             Requested size: 426.80008pt x 39.19043pt.
+[33 <./img/image11.png (PNG copy)> <./img/image12.png (PNG copy)> <./img/image1
+3.png (PNG copy)>]
+<img/image15.png, id=171, 922.94812pt x 336.50719pt>
+File: img/image15.png Graphic file (type png)
+<use img/image15.png>
+Package pdftex.def Info: img/image15.png  used on input line 890.
+(pdftex.def)             Requested size: 426.7864pt x 155.60645pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 895--897
+
+ []
+
+File: img/image15.png Graphic file (type png)
+<use img/image15.png>
+Package pdftex.def Info: img/image15.png  used on input line 904.
+(pdftex.def)             Requested size: 426.7864pt x 155.60645pt.
+
+Underfull \vbox (badness 6542) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 908.
+LaTeX Info: Redefining \% on input line 908.
+ [34 <./img/image14.png (PNG copy)> <./img/image15.png (PNG copy)>]
+<img/image16.png, id=175, 813.79031pt x 636.87938pt>
+File: img/image16.png Graphic file (type png)
+<use img/image16.png>
+Package pdftex.def Info: img/image16.png  used on input line 913.
+(pdftex.def)             Requested size: 290.84091pt x 227.61462pt.
+File: img/image12.png Graphic file (type png)
+<use img/image12.png>
+Package pdftex.def Info: img/image12.png  used on input line 922.
+(pdftex.def)             Requested size: 426.7864pt x 83.19897pt.
+
+Underfull \vbox (badness 3977) has occurred while \output is active []
+
+ [35 <./img/image16.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 937.
+LaTeX Info: Redefining \% on input line 937.
+ [36]
+Cap\'{\i }tulo 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 945--947
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--956
+
+ []
+
+[37
+
+
+]
+LaTeX Info: Redefining \. on input line 964.
+LaTeX Info: Redefining \% on input line 964.
+ [38]
+Cap\'{\i }tulo 7.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 9
+68.
+(C:\Users\pcs301\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 968--970
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--973
+
+ []
+
+
+Overfull \hbox (23.68051pt too wide) in paragraph at lines 974--976
+[]$\OT1/pcr/m/n/12 https : / / learn . microsoft . com / es-[]es / powershell /
+ scripting / overview ?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 974--976
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--979
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 980--982
+
+ []
+
+[39
+
+
+] (TFG_PatriciaCastañoSanchez.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-06-16>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3976 strings out of 476037
+ 68276 string characters out of 5779373
+ 1861763 words of memory out of 5000000
+ 24657 multiletter control sequences out of 15000+600000
+ 535573 words of font info for 72 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,7n,65p,746b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/pcs301/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a
+.pfb><C:/Users/pcs301/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8
+a.pfb><C:/Users/pcs301/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr
+8a.pfb><C:/Users/pcs301/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
+r8a.pfb><C:/Users/pcs301/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on TFG_PatriciaCastañoSanchez.pdf (53 pages, 1204992 bytes).
+PDF statistics:
+ 218 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+
