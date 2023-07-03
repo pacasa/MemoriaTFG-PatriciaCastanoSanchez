@@ -244,13 +244,23 @@ En esta sección se describe el contexto en el que se encuentran los tres script
 \subsection{Actualización de información de usuarios}
 \label{subsec:Actualización de información de usuarios}
 
-En el primer ejemplo de caso real utilizado para desarrollar en este trabajo fin de grado, la empresa cuenta con una base de datos Oracle que recoge la información de los trabajadores gestionada por el equipo de Recursos Humanos. Los trabajadores, en una de sus muchas tareas, acceden de forma manual a dicha base de datos y, uno por uno, van comparando la información de cada usuario almacenada con la información de la que disponen en el directorio activo. Esto puede suponer varias horas de trabajo.
+En el primer ejemplo de caso real utilizado para desarrollar en este trabajo fin de grado, la empresa cuenta con una base de datos Oracle que recoge la información de los trabajadores gestionada por el equipo de Recursos Humanos. Los trabajadores, en una de sus muchas tareas, acceden de forma manual a dicha base de datos y, uno por uno, van comparando la información de cada usuario almacenada con la información de la que disponen en el directorio activo, ya que es importante mantener la información actualizada de los usuarios a los que se les da soporte, sobre todo información como correo electrónico para posibles comunicaciones, empresa para la que trabaja por si hay que verificar que tengan al día el pago de licencias, etc. Esto puede suponer varias horas de trabajo.
 \\
 
 Para reducir el tiempo del trabajador en esta tarea, se estudia automatizarla con lenguaje Powershell.
 \\
 
 Dicha base de datos se almacena en un servidor al que se accederá a través de lenguaje Powershell para recuperar la información deseada de cada empleado y replicarla en objetos de Active Directory, los cuales son necesarios para tener un control de los trabajadores dados de alta en la empresa, así como su información personal, servicios de la empresa a los que puede acceder cada uno de ellos, licencias dadas de alta, etc.
+\\
+
+Para no modificar directamente el directorio activo de producción, la empresa cuenta con un entorno de preproducción en el que tiene replicados tanto el directorio activo como la base de datos. Se ejecutará el script de actualización en este entorno y, tras verificar que los datos son fiables, se desplegará la tarea en el entorno de producción.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/UpdateUsers_diagrama.png}
+	\caption{Diagrama flujo script AD}
+	\label{fig:UpdateUsers_diagrama}
+\end{figure}
 
 \subsection{Creación de colección de equipos en SCCM}
 \label{Creación de colección de equipos en SCCM}
@@ -269,10 +279,17 @@ Se decide crear un script para automatizar esta tarea y evitar tener que ocupar 
 
 Este script consultará el grupo del directorio activo, buscará en SCCM el equipo asignado a cada usuario de este grupo y los repartirá de forma aleatoria en dos colecciones de actualizaciones en SCCM.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/SCCM_diagrama.png}
+	\caption{Diagrama flujo script SCCM}
+	\label{fig:SCCM_diagrama}
+\end{figure}
+
 \subsection{Actualización de lista Sharepoint con usuarios con soporte}
 \label{Actualización de lista Sharepoint con usuarios con soporte}
 
-La empresa da soporte a mas de 5000 empleados de otras iniciativas y dispone de diferentes tipos de soporte y servicios que van desde únicamente soporte de equipo físico hasta soporte de licencia de correo electrónico, soporte de Microsoft Outlook, etc.
+La empresa da soporte a más de 5000 empleados de otras iniciativas y dispone de diferentes tipos de soporte y servicios que van desde únicamente soporte de equipo físico hasta soporte de licencia de correo electrónico, soporte de Microsoft Outlook, etc.
 \\
 
 Los técnicos del departamento de Desktop necesitan tener una lista que contenga todos los usuarios a los que se les da soporte y qué tipo de soporte se les da para saber, en caso de incidencia, qué servicios se ofrece a cada usuario.
@@ -285,7 +302,16 @@ Esta tarea sería muy complicada hacerla de forma manual ya que existen más de 
 \\
 
 Este script consulta tanto la base de datos Oracle, que contiene la información de todos los usuarios, como los usuarios en Active Directory, dando preferencia a la base de datos en caso de encontrar el mismo usuario en ambos lados; chequea la información de estos usuarios contra una lista de Sharepoint en la que se han establecido unos parámetros para cada tipo de soporte y, dependiendo los parámetros que cumpla cada usuario, se añaden a otra lista Sharepoint en la que se indica tanto la información del usuario (nombre, apellidos, dirección de correo electrónico, iniciativa para la que trabaja, matrícula, etc.) como el tipo de soporte que tiene y los servicios contratados.
+\\
 
+La empresa dispone de un site de Sharepoint que se utiliza como entorno de pruebas o preproducción en el que se creará tanto la lista de parámetros como la lista de usuarios con soporte para ejecutar el script y hacer las pruebas necesarias hasta verificar que los resultados son fiables y puedan pasar al entorno de producción.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/Sharepoint_diagrama.png}
+	\caption{Diagrama flujo script Sharepoint}
+	\label{fig:Sharepoint_diagrama}
+\end{figure}
 
 \section{Estructura de la memoria}
 \label{sec:estructura}
@@ -432,6 +458,7 @@ Después de estos casi 6 años en la empresa, tengo muchísimas tareas automatiz
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
+
 \chapter{Estado del arte}
 \label{chap:estado}
 
@@ -453,6 +480,15 @@ En este capítulo se introducen las tecnologías citadas y utilizadas en este pr
 
 \item LaTeX
 \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/Diagrama_tecnologias.png}
+	\caption{Diagrama tecnologías}
+	\label{fig:Diagrama_tecnologias}
+\end{figure}
+
+La Figura 3.1 representa la conexión que existe desde un servidor en el que se centralizan todos los scripts y tareas automatizadas, con los servidores con las diferentes tecnologías citadas.
 
 \section{Powershell}
 \label{sec:Powershell}
