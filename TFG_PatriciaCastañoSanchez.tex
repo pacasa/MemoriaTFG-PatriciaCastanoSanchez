@@ -57,7 +57,7 @@ INGENIERÍA EN SISTEMAS AUDIOVISUALES Y MULTIMEDIA
 
 \vspace{1cm}
 \LARGE
-\textbf{TRABAJO FIN DE GRADO/MÁSTER}
+\textbf{TRABAJO FIN DE GRADO}
 
 \vspace{2cm}
 
@@ -92,7 +92,7 @@ Curso académico 2022/2023
 \vspace{-4cm}
 \begin{center}
 \LARGE
-\textbf{Trabajo Fin de Grado/Máster}
+\textbf{Trabajo Fin de Grado}
 
 \vspace{1cm}
 \large
@@ -106,7 +106,7 @@ Automatización de Tareas con Powershell
 \end{center}
 
 \vspace{1cm}
-La defensa del presente Proyecto Fin de Carrera se realizó el día \qquad$\;\,$ de \qquad\qquad\qquad\qquad \newline de 2023, siendo calificada por el siguiente tribunal:
+La defensa del presente Proyecto Fin de Carrera se realizó el día \qquad$\;\,$ de julio de 2023, siendo calificada por el siguiente tribunal:
 
 
 \vspace{0.5cm}
@@ -128,7 +128,7 @@ y habiendo obtenido la siguiente calificación:
 
 \vspace{1cm}
 \begin{flushright}
-Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 2023
+Fuenlabrada, a \qquad$\;\,$ de julio de 2023
 \end{flushright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,9 +222,9 @@ Hay que tener en cuenta que, por norma general, cualquier labor repetitiva lleva
 
 \item Actualizar listas de Sharepoint con usuarios dados de alta en el directorio activo
 
-\item Chequear número de licencias de correo
+\item Comprobar el número de licencias de correo
 
-\item Chequear fecha de caducidad de certificado personal
+\item Comprobar la fecha de caducidad de certificado personal
 
 \item Copiar elementos de una lista entre dos listas de Sharepoint
 
@@ -232,7 +232,7 @@ Hay que tener en cuenta que, por norma general, cualquier labor repetitiva lleva
 
 \item Crear una colección de equipos en System Center Configuration Manager (SCCM)
 
-\item Chequear fecha de caducidad de contraseña personal
+\item Comprobar la fecha de caducidad de contraseña personal
 \end{itemize}
 
 
@@ -248,17 +248,17 @@ En el primer ejemplo de caso real utilizado para desarrollar en este trabajo fin
 \\
 
 Para reducir el tiempo del trabajador en esta tarea, se estudia automatizarla con lenguaje Powershell.
-\\
 
 Dicha base de datos se almacena en un servidor al que se accederá a través de lenguaje Powershell para recuperar la información deseada de cada empleado y replicarla en objetos de Active Directory, los cuales son necesarios para tener un control de los trabajadores dados de alta en la empresa, así como su información personal, servicios de la empresa a los que puede acceder cada uno de ellos, licencias dadas de alta, etc.
-\\
 
 Para no modificar directamente el directorio activo de producción, la empresa cuenta con un entorno de preproducción en el que tiene replicados tanto el directorio activo como la base de datos. Se ejecutará el script de actualización en este entorno y, tras verificar que los datos son fiables, se desplegará la tarea en el entorno de producción.
 
-\begin{figure}[H]
+En la figura~\ref{fig:UpdateUsers_diagrama} se puede ver el diagrama de flujo de este script.
+
+\begin{figure}
 	\centering
-	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/UpdateUsers_diagrama.png}
-	\caption{Diagrama flujo script AD}
+	\includegraphics[width=10cm, keepaspectratio]{img/UpdateUsers_diagrama.png}
+	\caption{Diagrama de flujo del script AD.}
 	\label{fig:UpdateUsers_diagrama}
 \end{figure}
 
@@ -279,10 +279,10 @@ Se decide crear un script para automatizar esta tarea y evitar tener que ocupar 
 
 Este script consultará el grupo del directorio activo, buscará en SCCM el equipo asignado a cada usuario de este grupo y los repartirá de forma aleatoria en dos colecciones de actualizaciones en SCCM.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/SCCM_diagrama.png}
-	\caption{Diagrama flujo script SCCM}
+	\includegraphics[width=17cm, keepaspectratio]{img/SCCM_diagrama.png}
+	\caption{Diagrama de flujo del script SCCM.}
 	\label{fig:SCCM_diagrama}
 \end{figure}
 
@@ -306,10 +306,10 @@ Este script consulta tanto la base de datos Oracle, que contiene la información
 
 La empresa dispone de un site de Sharepoint que se utiliza como entorno de pruebas o preproducción en el que se creará tanto la lista de parámetros como la lista de usuarios con soporte para ejecutar el script y hacer las pruebas necesarias hasta verificar que los resultados son fiables y puedan pasar al entorno de producción.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/Sharepoint_diagrama.png}
-	\caption{Diagrama flujo script Sharepoint}
+	\includegraphics[width=17cm, keepaspectratio]{img/Sharepoint_diagrama.png}
+	\caption{Diagrama de flujo general de un script en Sharepoint.}
 	\label{fig:Sharepoint_diagrama}
 \end{figure}
 
@@ -331,8 +331,8 @@ Se explica cada una de las tecnologías involucradas en el trabajo.
 \item Capítulo 4. Diseño e Implementación.
 Se explica en qué consiste el trabajo aplicado en la empresa y se muestran casos reales de tareas que están en funcionamiento.
 
-\item Capítulo 5. Experimentos, validación y resultados.
-Se muestran varios ejemplos de experimentos con diferentes tareas reales de la empresa, mostrando el resultado en imágenes.
+\item Capítulo 5. Resultados.
+Se muestran varios ejemplos de diferentes tareas reales de la empresa, mostrando el resultado en imágenes.
 
 \item Capítulo 6. Conclusiones.
 Se explican las conclusiones que se adquieren con este trabajo y las lecciones aprendidas.
@@ -465,30 +465,30 @@ Después de estos casi 6 años en la empresa, tengo muchísimas tareas automatiz
 \section{Introducción}
 \label{sec:Introducción}
 
-En este capítulo se introducen las tecnologías citadas y utilizadas en este proyecto, como son:
+En este capítulo se introducen las tecnologías utilizadas en este proyecto, como son:
 
 \begin{itemize}
-\item Powershell
+\item Powershell~\cite{lee2011windows}
 
-\item Oracle Database
+\item Oracle Database~\cite{greenwald2013oracle}
 
-\item Active Directory
+\item Active Directory~\cite{desmond2008active}
 
-\item System Center Configuration Manager (SCCM)
+\item System Center Configuration Manager (SCCM)~\cite{krstevski2014mastering}
 
-\item Sharepoint
+\item Sharepoint~\cite{cawood2013microsoft}
 
-\item LaTeX
+\item \LaTeX~\cite{griffiths2016learning}
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/Diagrama_tecnologias.png}
-	\caption{Diagrama tecnologías}
+	\includegraphics[width=17cm, keepaspectratio]{img/Diagrama_tecnologias.png}
+	\caption{Arquitectura software de las soluciones presentadas en este trabajo.}
 	\label{fig:Diagrama_tecnologias}
 \end{figure}
 
-La Figura 3.1 representa la conexión que existe desde un servidor en el que se centralizan todos los scripts y tareas automatizadas, con los servidores con las diferentes tecnologías citadas.
+La Figura 3.1 representa la conexión que existe desde un servidor en el que se centralizan todos los scripts y tareas automatizadas, con los servidores con las diferentes tecnologías usadas en este trabajo.
 
 \section{Powershell}
 \label{sec:Powershell}
@@ -620,36 +620,36 @@ SharePoint es una plataforma de colaboración y gestión de contenido desarrolla
 En resumen, SharePoint es una plataforma de colaboración y gestión de contenido que brinda a las organizaciones una variedad de herramientas para mejorar la colaboración, administrar documentos, automatizar flujos de trabajo y aprovechar la inteligencia empresarial. Facilita la comunicación y el intercambio de información, impulsando la productividad y la eficiencia en los entornos de trabajo.
 
 
-\section{LaTeX} 
+\section{\LaTeX} 
 \label{sec:LaTeX}
 
-LaTex es el sistema utilizado para componer el texto de este trabajo fin de grado.
+\LaTeX~es el sistema utilizado para componer el texto de este trabajo fin de grado.
 \\
 
-LaTeX es un sistema de composición de textos que se utiliza ampliamente para la creación de documentos científicos, técnicos y académicos de alta calidad. Fue desarrollado originalmente por Leslie Lamport en la década de 1980 y se basa en el lenguaje de programación TeX creado por Donald Knuth.
+\LaTeX~es un sistema de composición de textos que se utiliza ampliamente para la creación de documentos científicos, técnicos y académicos de alta calidad. Fue desarrollado originalmente por Leslie Lamport en la década de 1980 y se basa en el lenguaje de programación TeX creado por Donald Knuth.
 \\
 
-En lugar de enfocarse en el formato visual directamente, LaTeX se centra en la estructura y el contenido del documento. Utiliza comandos y macros para controlar la apariencia del texto y la presentación final. Esto permite a los usuarios centrarse en el contenido sin tener que preocuparse demasiado por el diseño.
+En lugar de enfocarse en el formato visual directamente, \LaTeX~se centra en la estructura y el contenido del documento. Utiliza comandos y macros para controlar la apariencia del texto y la presentación final. Esto permite a los usuarios centrarse en el contenido sin tener que preocuparse demasiado por el diseño.
 \\
 
-Algunos aspectos clave de LaTeX son:
+Algunos aspectos clave de \LaTeX~son:
 
 \begin{itemize}
 
-\item Estructura lógica: LaTeX divide los documentos en secciones lógicas como capítulos, secciones y subsecciones. Esto facilita la organización y la navegación dentro del documento.
+\item Estructura lógica: \LaTeX~divide los documentos en secciones lógicas como capítulos, secciones y subsecciones. Esto facilita la organización y la navegación dentro del documento.
 
-\item Fórmulas matemáticas: LaTeX es ampliamente utilizado en entornos científicos debido a su excelente soporte para fórmulas matemáticas. Proporciona una amplia gama de símbolos y comandos matemáticos para crear ecuaciones y expresiones matemáticas de manera precisa.
+\item Fórmulas matemáticas: \LaTeX~es ampliamente utilizado en entornos científicos debido a su excelente soporte para fórmulas matemáticas. Proporciona una amplia gama de símbolos y comandos matemáticos para crear ecuaciones y expresiones matemáticas de manera precisa.
 
-\item Bibliografía y citas: LaTeX ofrece herramientas para gestionar bibliografías y realizar citas bibliográficas. Con la ayuda de estilos de citación específicos, como BibTeX, es posible generar automáticamente listas de referencias y asegurarse de que las citas sean consistentes en todo el documento.
+\item Bibliografía y citas: \LaTeX~ herramientas para gestionar bibliografías y realizar citas bibliográficas. Con la ayuda de estilos de citación específicos, como BibTeX, es posible generar automáticamente listas de referencias y asegurarse de que las citas sean consistentes en todo el documento.
 
-\item Gráficos e imágenes: LaTeX permite la inserción de gráficos y figuras en el documento. Los usuarios pueden incluir imágenes en varios formatos (como PNG, JPEG o PDF) y ajustar su posición y tamaño dentro del texto.
+\item Gráficos e imágenes: \LaTeX~permite la inserción de gráficos y figuras en el documento. Los usuarios pueden incluir imágenes en varios formatos (como PNG, JPEG o PDF) y ajustar su posición y tamaño dentro del texto.
 
-\item Plantillas y estilos: LaTeX proporciona una gran cantidad de plantillas y estilos predefinidos que facilitan la creación de documentos con una apariencia profesional. Estos estilos controlan aspectos como el diseño de página, los encabezados y pies de página, y la apariencia de las tablas y figuras.
+\item Plantillas y estilos: \LaTeX~proporciona una gran cantidad de plantillas y estilos predefinidos que facilitan la creación de documentos con una apariencia profesional. Estos estilos controlan aspectos como el diseño de página, los encabezados y pies de página, y la apariencia de las tablas y figuras.
 
-\item Portabilidad y colaboración: Los documentos LaTeX son archivos de texto plano, lo que significa que son altamente portables y se pueden editar en cualquier editor de texto. Además, LaTeX fomenta la colaboración, ya que varias personas pueden trabajar en diferentes partes del documento al mismo tiempo.
+\item Portabilidad y colaboración: Los documentos \LaTeX~son archivos de texto plano, lo que significa que son altamente portables y se pueden editar en cualquier editor de texto. Además, \LaTeX~fomenta la colaboración, ya que varias personas pueden trabajar en diferentes partes del documento al mismo tiempo.
 \end{itemize}
 
-En resumen, LaTeX es un sistema de composición de textos poderoso y flexible que se utiliza ampliamente para la creación de documentos científicos y académicos de alta calidad. Su enfoque en la estructura y el contenido del documento permite a los usuarios centrarse en el contenido y producir resultados profesionales con facilidad.
+En resumen, \LaTeX~es un sistema de composición de textos poderoso y flexible que se utiliza ampliamente para la creación de documentos científicos y académicos de alta calidad. Su enfoque en la estructura y el contenido del documento permite a los usuarios centrarse en el contenido y producir resultados profesionales con facilidad.
 
 
 
@@ -693,7 +693,7 @@ Esta tarea consiste en dar tres opciones al técnico:
 
 \item Change-ExpiredPassword.ps1
 
-Esta es una tarea automática que se ejecuta todos los días y que consiste en chequear todos los usuarios de Active Directory de la empresa comprobando si la contraseña ha caducado (esta información se encuentra en el campo “PasswordExpired” del directorio activo, que toma el valor ‘True’ si la contraseña está caducada). Para aquellos usuarios cuya contraseña ha caducado, se les genera una nueva aleatoria y se avisa al equipo de técnicos de operaciones de dicho cambio. 
+Esta es una tarea automática que se ejecuta todos los días y que consiste en chequear todos los usuarios de Active Directory de la empresa comprobando si la contraseña ha caducado (esta información se encuentra en el campo “PasswordExpired” del directorio activo, que toma el valor ‘True’ si la contraseña ha caducado). Para aquellos usuarios cuya contraseña ha caducado, se les genera una nueva aleatoria y se avisa al equipo de técnicos de operaciones de dicho cambio. 
 
 Esta tarea trata de asegurar que un usuario, cuya contraseña ha caducado en los sistemas locales de la empresa, no pueda acceder vía online utilizando dicha contraseña.
 \\
@@ -764,18 +764,18 @@ El script trabaja tanto con la base de datos de Oracle como con los usuarios en 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Experimentos, validación y resultados}
+\chapter{Resultados}
 \label{chap:Experimentos, validación y resultados}
 
 En esta sección mostraré imágenes con pruebas y resultados de la ejecución de diferentes scripts.
 
 \begin{itemize}
 
-\item Experimento con Update-ADusers.ps1
+\item Tarea Update-ADusers.ps1
 
-En este experimento se comprueba que, teniendo un valor original en Active Directory de un usuario, tras ejecutar el script que actualiza los datos del directorio activo según los datos que haya en la base de datos de Oracle, se cambia el valor del objeto del directorio activo al mismo valor que hay en la base de datos.
+En este ejemplo se comprueba que, teniendo un valor original en Active Directory de un usuario, tras ejecutar el script que actualiza los datos del directorio activo según los datos que haya en la base de datos de Oracle, se cambia el valor del objeto del directorio activo al mismo valor que hay en la base de datos.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image01.png}
 	\caption{Datos originales en Active Directory}
@@ -793,7 +793,7 @@ En la Figura 5.1 se ve la información que tiene el objeto del directorio activo
 
 En la Figura 5.2 se ve la información que proviene de la base de datos Oracle, es la información ‘válida’ que debe contener el directorio activo. Se requiere especial atención en las columnas I y Q ya que, a propósito, se han modificado para mostrar el funcionamiento del script.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image03.png}
 	\caption{Datos en Active Directory tras ejecutar el script}
@@ -803,11 +803,11 @@ En la Figura 5.2 se ve la información que proviene de la base de datos Oracle, 
 En esta última figura se observa cómo, tras ejecutar el script de actualización de datos, las propiedades ‘Oficina’ y ‘Organización’ se han modificado.
 \\
 
-\item Experimento con colection-betaITuser-prepare.ps1
+\item Tarea colection-betaITuser-prepare.ps1
 
-En este experimento se muestra cómo se generan dos colecciones de equipos en SCCM correspondientes a los usuarios almacenados en un grupo del directorio de Active Directory. El script se ejecuta en el servidor que tiene instalado el servicio de SCCM para evitar tener que ejecutarlo de manera remota desde otro servidor y hacer así más rápida su ejecución.
+En esta ejemplo se muestra cómo se generan dos colecciones de equipos en SCCM correspondientes a los usuarios almacenados en un grupo del directorio de Active Directory. El script se ejecuta en el servidor que tiene instalado el servicio de SCCM para evitar tener que ejecutarlo de manera remota desde otro servidor y hacer así más rápida su ejecución.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image04.png}
 	\caption{Script en curso}
@@ -818,7 +818,7 @@ En la Figura 5.4 se muestra el script en curso que va sacando trazas durante su 
 
 Se puede ver los equipos en SCCM que corresponden a cada usuario del grupo del directorio activo, así como si no encuentra ningún equipo para algún usuario.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image05.png}
 	\caption{Colección 1}
@@ -829,20 +829,20 @@ Se puede ver los equipos en SCCM que corresponden a cada usuario del grupo del d
 En la Figura 5.5 se muestra los equipos que ha añadido el script a la Colección 1 (beta ITUser grupo 1) en la herramienta de SCCM.
 \\
 
-\item Experimento con ExpiredPassword-ADUser.ps1
+\item Tarea ExpiredPassword-ADUser.ps1
 
-En este experimento se comprueba que, habiendo una contraseña que caducará en 15 días, el script, tras su ejecución, envía el aviso a la cuenta de correo asociada al usuario cuya contraseña va a caducar avisando de los días que le queda para cambiarla y de qué manera puede realizar este cambio.
+En este ejemplo se comprueba que, habiendo una contraseña que caducará en 15 días, el script, tras su ejecución, envía el aviso a la cuenta de correo asociada al usuario cuya contraseña va a caducar avisando de los días que le queda para cambiarla y de qué manera puede realizar este cambio.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image06.png}
 	\caption{Fecha de caducidad de contraseña en el AD}
 	\label{fig:image06}
 \end{figure}
 
-En la Figura 5.6 se muestra la fecha en la que caduca la contraseña para el usuario utilizado en este experimento
+En la Figura 5.6 se muestra la fecha en la que caduca la contraseña para el usuario utilizado en este ejemplo.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image07.png}
 	\caption{Aviso de contraseña a punto de caducar}
@@ -852,11 +852,11 @@ En la Figura 5.6 se muestra la fecha en la que caduca la contraseña para el usu
 En la Figura 5.7 se puede ver el correo electrónico que envía el script al usuario al que le va a caducar la contraseña.
 \\
 
-\item Experimento con Generate-UserCertificate.ps1
+\item Tarea Generate-UserCertificate.ps1
 
-En este experimento se comprueba que, tras introducir el login del usuario del que se requiere certificado, el script conecta con el servidor que tiene el servicio de Central Administration, genera el certificado como se puede ver en la última imagen, y lo envía a la dirección de correo asociada al usuario del que se ha introducido el login, así como la contraseña para instalar dicho certificado.
+En este ejemplo se comprueba que, tras introducir el login del usuario del que se requiere certificado, el script conecta con el servidor que tiene el servicio de Central Administration, genera el certificado como se puede ver en la última imagen, y lo envía a la dirección de correo asociada al usuario del que se ha introducido el login, así como la contraseña para instalar dicho certificado.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image08.png}
 	\caption{Ejecución de script}
@@ -865,23 +865,23 @@ En este experimento se comprueba que, tras introducir el login del usuario del q
 
 La Figura 5.8 muestra lo que aparece por pantalla cuando se ejecuta el script de generación de certificado, solicitando por pantalla el login del usuario al que se le quiere generar y enviar dicho certificado.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image09.png}
 	\caption{Certificado enviado por correo}
 	\label{fig:image09}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image10.png}
 	\caption{Contraseña enviada por correo}
 	\label{fig:image10}
 \end{figure}
 
-En la Figura 5.9 y la Figura 5.10 se puede ver los correos que envía el propio script adjuntando el certificado en uno de ellos, y la contraseña para instalar dicho certificado en otro. Esta información se envía en correos separados por si, en el hipotético caso de que se extraviaran los correos, cada correo por separa no se pudiera utilizar.
+En las Figuras 5.9 y 5.10 se pueden ver los correos que envía el propio script adjuntando el certificado en uno de ellos, y la contraseña para instalar dicho certificado en otro. Esta información se envía en correos separados por si, en el hipotético caso de que se extraviaran los correos, cada correo por separa no se pudiera utilizar.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image11.png}
 	\caption{Certificado en la CA}
@@ -891,11 +891,11 @@ En la Figura 5.9 y la Figura 5.10 se puede ver los correos que envía el propio 
 En la Figura 5.11 aparece la Central Administration donde aparecen todos los certificados generados y se realza el certificado que acaba de generar el script.
 \\
 
-\item Experimento con Copy-SPItems.ps1
+\item Tarea Copy-SPItems.ps1
 
-En este experimento se comprueba que, teniendo una lista de Sharepoint vacía, tras ejecutar el script, el cual nos solicita el nombre de la lista origen y la lista destino, se copian los datos de la lista destino en la lista origen.
+En este ejemplo se comprueba que, teniendo una lista de Sharepoint vacía, tras ejecutar el script, el cual nos solicita el nombre de la lista origen y la lista destino, se copian los datos de la lista destino en la lista origen.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image12.png}
 	\caption{Lista Sharepoint destino}
@@ -904,7 +904,7 @@ En este experimento se comprueba que, teniendo una lista de Sharepoint vacía, t
 
 En la Figura 5.12 se muestra la lista destino, vacía antes de ejecutar el script.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image13.png}
 	\caption{Lista Sharepoint origen}
@@ -913,7 +913,7 @@ En la Figura 5.12 se muestra la lista destino, vacía antes de ejecutar el scrip
 
 En la Figura 5.13 se muestra la lista origen, de la que se copiarán los ítems
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image14.png}
 	\caption{Ejecución del script}
@@ -922,7 +922,7 @@ En la Figura 5.13 se muestra la lista origen, de la que se copiarán los ítems
 
 Cuando se ejecuta el script, se pide por pantalla el nombre de la lista de la que se copiarán los ítems, y el nombre de la lista donde se copiarán éstos.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image15.png}
 	\caption{Lista Sharepoint destino tras ejecutar el script}
@@ -932,11 +932,11 @@ Cuando se ejecuta el script, se pide por pantalla el nombre de la lista de la qu
 En la Figura 5.15 vemos cómo se ha rellenado la lista que inicialmente estaba vacía.
 \\
 
-\item Experimento con Delete-SPItems.ps1
+\item Tarea Delete-SPItems.ps1
 
-Con este experimento se comprueba que, teniendo una lista de Sharepoint llena, tras ejecutar el script en el que se le indica en el código el nombre de la lista que queremos vaciar, dicha lista queda limpia sin ningún ítem. Este script muestra por pantalla el número de ítems que contiene la lista y saca por pantalla una traza por cada ítem que va eliminando.
+Con este ejemplo se comprueba que, teniendo una lista de Sharepoint llena, tras ejecutar el script en el que se le indica en el código el nombre de la lista que queremos vaciar, dicha lista queda limpia sin ningún ítem. Este script muestra por pantalla el número de ítems que contiene la lista y saca por pantalla una traza por cada ítem que va eliminando.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image15.png}
 	\caption{Lista Sharepoint original rellena}
@@ -945,7 +945,7 @@ Con este experimento se comprueba que, teniendo una lista de Sharepoint llena, t
 
 La Figura 5.16 muestra la lista original llena, antes de ejecutar el script de borrado.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image16.png}
 	\caption{Lista Sharepoint original rellena}
@@ -954,7 +954,7 @@ La Figura 5.16 muestra la lista original llena, antes de ejecutar el script de b
 
 Es la Figura 5.17 se ve la ejecución del script, mostrando la línea de código donde se modifica el nombre de la lista que se quiere vaciar (línea 26 del script). En la consola de Powershell vemos una traza por cada ítem eliminado para ir comprobando que el script se está ejecutando correctamente.
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image12.png}
 	\caption{Lista Sharepoint vaciada}
@@ -999,25 +999,12 @@ El trabajo fin de grado está basado en el lenguaje de scripting Powershell, un 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Referencias}
-\label{chap:Referencias}
+%\chapter{Referencias}
+%\label{chap:Referencias}
 
-\url{https://www.microsoft.com}
-\\
-
-\url{https://www.learn.microsoft.com}
-\\
-
-\url{https://learn.microsoft.com/es-es/powershell/scripting/overview?view=powershell-7.3}
-\\
-
-\url{https://support.microsoft.com/es-es/office}
-\\
-
-\url{https://www.oracle.com}
-\\
-
-\url{https://www.google.es}
-
+% Las siguientes dos instrucciones es todo lo que necesitas
+% para incluir las citas en la memoria
+\bibliographystyle{abbrv}
+\bibliography{TFG_PatriciaCastanoSanchez}  % memoria.bib es el nombre del fichero que contiene
 
 \end{document}
