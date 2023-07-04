@@ -212,6 +212,7 @@ Este trabajo fin de grado tratará de demostrar cómo, uniendo las tecnologías 
 \\
 
 Aunque se han automatizado varias decenas de tares, en este trabajo se pondrá el foco de manera pormenorizada en tres tareas, todas ellas reales, para explicar de manera específica la utilidad de automatizar tareas en la empresa. Además, se describen, ya de manera más superficial, otros ejemplos reales y en uso de trabajos automatizados en la empresa. 
+\\
 
 Hay que tener en cuenta que, por norma general, cualquier labor repetitiva llevada a cabo por los técnicos, se puede llegar a automatizar, algunos ejemplos en uso en la empresa son:
 
@@ -245,7 +246,6 @@ En esta sección se describe el contexto en el que se encuentran los tres script
 \label{subsec:Actualización de información de usuarios}
 
 En el primer ejemplo de caso real utilizado para desarrollar en este trabajo fin de grado, la empresa cuenta con una base de datos Oracle que recoge la información de los trabajadores gestionada por el equipo de Recursos Humanos. Los trabajadores, en una de sus muchas tareas, acceden de forma manual a dicha base de datos y, uno por uno, van comparando la información de cada usuario almacenada con la información de la que disponen en el directorio activo, ya que es importante mantener la información actualizada de los usuarios a los que se les da soporte, sobre todo información como correo electrónico para posibles comunicaciones, empresa para la que trabaja por si hay que verificar que tengan al día el pago de licencias, etc. Esto puede suponer varias horas de trabajo.
-\\
 
 Para reducir el tiempo del trabajador en esta tarea, se estudia automatizarla con lenguaje Powershell.
 
@@ -255,7 +255,7 @@ Para no modificar directamente el directorio activo de producción, la empresa c
 
 En la figura~\ref{fig:UpdateUsers_diagrama} se puede ver el diagrama de flujo de este script.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=10cm, keepaspectratio]{img/UpdateUsers_diagrama.png}
 	\caption{Diagrama de flujo del script AD.}
@@ -266,20 +266,16 @@ En la figura~\ref{fig:UpdateUsers_diagrama} se puede ver el diagrama de flujo de
 \label{Creación de colección de equipos en SCCM}
 
 La empresa trabaja con la tecnología de System Center Configuration Manager (SCCM), que se encarga, entre otras cosas, de administrar las actualizaciones de los equipos de los empleados.
-\\
 
 Estas actualizaciones de equipo las prueban los técnicos del departamento de Desktop y de Sistemas antes de desplegarse al resto de usuarios de la empresa. Dichas actualizaciones se configuran con una determinada fecha de despliegue y de instalación, por lo que la empresa crea dos grupos con los equipos de los técnicos que van a probarlas por si, en caso de que la actualización afectase al funcionamiento del equipo, no se vieran todos los técnicos afectados.
-\\
 
 Los objetos del Active Directory correspondientes a los usuarios del departamento de Desktop y de Sistemas se encuentran en un grupo de éste directorio activo el cual es dinámico ya que se va actualizando con los nuevos integrantes del departamento o las bajas de éste.
-\\
 
 Se decide crear un script para automatizar esta tarea y evitar tener que ocupar un técnico en revisar dicho grupo de Active Directory y crear las colecciones de los equipos correspondientes en SCCM de forma manual, lo que conllevaría buscar usuario por usuario en la herramienta de SCCM y asignar su equipo a una de estas dos colecciones.
-\\
 
 Este script consultará el grupo del directorio activo, buscará en SCCM el equipo asignado a cada usuario de este grupo y los repartirá de forma aleatoria en dos colecciones de actualizaciones en SCCM.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/SCCM_diagrama.png}
 	\caption{Diagrama de flujo del script SCCM.}
@@ -306,10 +302,10 @@ Este script consulta tanto la base de datos Oracle, que contiene la información
 
 La empresa dispone de un site de Sharepoint que se utiliza como entorno de pruebas o preproducción en el que se creará tanto la lista de parámetros como la lista de usuarios con soporte para ejecutar el script y hacer las pruebas necesarias hasta verificar que los resultados son fiables y puedan pasar al entorno de producción.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/Sharepoint_diagrama.png}
-	\caption{Diagrama de flujo general de un script en Sharepoint.}
+	\caption{Diagrama de flujo general del script de Sharepoint.}
 	\label{fig:Sharepoint_diagrama}
 \end{figure}
 
@@ -481,14 +477,14 @@ En este capítulo se introducen las tecnologías utilizadas en este proyecto, co
 \item \LaTeX~\cite{griffiths2016learning}
 \end{itemize}
 
-\begin{figure}
+La figura~\ref{fig:Diagrama_tecnologias} representa la conexión que existe desde un servidor en el que se centralizan todos los scripts y tareas automatizadas, con los servidores con las diferentes tecnologías usadas en este trabajo.
+
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/Diagrama_tecnologias.png}
 	\caption{Arquitectura software de las soluciones presentadas en este trabajo.}
 	\label{fig:Diagrama_tecnologias}
 \end{figure}
-
-La Figura 3.1 representa la conexión que existe desde un servidor en el que se centralizan todos los scripts y tareas automatizadas, con los servidores con las diferentes tecnologías usadas en este trabajo.
 
 \section{Powershell}
 \label{sec:Powershell}
@@ -775,14 +771,14 @@ En esta sección mostraré imágenes con pruebas y resultados de la ejecución d
 
 En este ejemplo se comprueba que, teniendo un valor original en Active Directory de un usuario, tras ejecutar el script que actualiza los datos del directorio activo según los datos que haya en la base de datos de Oracle, se cambia el valor del objeto del directorio activo al mismo valor que hay en la base de datos.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image01.png}
 	\caption{Datos originales en Active Directory}
 	\label{fig:image01}
 \end{figure}
 
-En la Figura 5.1 se ve la información que tiene el objeto del directorio activo antes de ejecutar el script de actualización de datos. Se requiere la atención en las propiedades del objeto ‘Organización’ y ‘Oficina’ ya que serán los datos que se actualizarán tras la ejecución del script.
+En la figura~\ref{fig:image01} se ve la información que tiene el objeto del directorio activo antes de ejecutar el script de actualización de datos. Se requiere la atención en las propiedades del objeto ‘Organización’ y ‘Oficina’ ya que serán los datos que se actualizarán tras la ejecución del script.
 
 \begin{figure}[h]
 	\centering
@@ -791,9 +787,9 @@ En la Figura 5.1 se ve la información que tiene el objeto del directorio activo
 	\label{fig:image02}
 \end{figure}
 
-En la Figura 5.2 se ve la información que proviene de la base de datos Oracle, es la información ‘válida’ que debe contener el directorio activo. Se requiere especial atención en las columnas I y Q ya que, a propósito, se han modificado para mostrar el funcionamiento del script.
+En la figura~\ref{fig:image02} se ve la información que proviene de la base de datos Oracle, es la información ‘válida’ que debe contener el directorio activo. Se requiere especial atención en las columnas I y Q ya que, a propósito, se han modificado para mostrar el funcionamiento del script.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image03.png}
 	\caption{Datos en Active Directory tras ejecutar el script}
@@ -807,18 +803,18 @@ En esta última figura se observa cómo, tras ejecutar el script de actualizaci�
 
 En esta ejemplo se muestra cómo se generan dos colecciones de equipos en SCCM correspondientes a los usuarios almacenados en un grupo del directorio de Active Directory. El script se ejecuta en el servidor que tiene instalado el servicio de SCCM para evitar tener que ejecutarlo de manera remota desde otro servidor y hacer así más rápida su ejecución.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image04.png}
 	\caption{Script en curso}
 	\label{fig:image04}
 \end{figure}
 
-En la Figura 5.4 se muestra el script en curso que va sacando trazas durante su ejecución indicando a qué colección se está añadiendo cada equipo y un contador para ver cuántos equipos está añadiendo.
+En la figura~\ref{fig:image04} se muestra el script en curso que va sacando trazas durante su ejecución indicando a qué colección se está añadiendo cada equipo y un contador para ver cuántos equipos está añadiendo.
 
 Se puede ver los equipos en SCCM que corresponden a cada usuario del grupo del directorio activo, así como si no encuentra ningún equipo para algún usuario.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image05.png}
 	\caption{Colección 1}
@@ -826,21 +822,21 @@ Se puede ver los equipos en SCCM que corresponden a cada usuario del grupo del d
 \end{figure}
 
 
-En la Figura 5.5 se muestra los equipos que ha añadido el script a la Colección 1 (beta ITUser grupo 1) en la herramienta de SCCM.
+En la figura~\ref{fig:image05} se muestra los equipos que ha añadido el script a la Colección 1 (beta ITUser grupo 1) en la herramienta de SCCM.
 \\
 
 \item Tarea ExpiredPassword-ADUser.ps1
 
 En este ejemplo se comprueba que, habiendo una contraseña que caducará en 15 días, el script, tras su ejecución, envía el aviso a la cuenta de correo asociada al usuario cuya contraseña va a caducar avisando de los días que le queda para cambiarla y de qué manera puede realizar este cambio.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image06.png}
 	\caption{Fecha de caducidad de contraseña en el AD}
 	\label{fig:image06}
 \end{figure}
 
-En la Figura 5.6 se muestra la fecha en la que caduca la contraseña para el usuario utilizado en este ejemplo.
+En la figura~\ref{fig:image06} se muestra la fecha en la que caduca la contraseña para el usuario utilizado en este ejemplo.
 
 \begin{figure}
 	\centering
@@ -849,21 +845,21 @@ En la Figura 5.6 se muestra la fecha en la que caduca la contraseña para el usu
 	\label{fig:image07}
 \end{figure}
 
-En la Figura 5.7 se puede ver el correo electrónico que envía el script al usuario al que le va a caducar la contraseña.
+En la figura~\ref{fig:image07} se puede ver el correo electrónico que envía el script al usuario al que le va a caducar la contraseña.
 \\
 
 \item Tarea Generate-UserCertificate.ps1
 
 En este ejemplo se comprueba que, tras introducir el login del usuario del que se requiere certificado, el script conecta con el servidor que tiene el servicio de Central Administration, genera el certificado como se puede ver en la última imagen, y lo envía a la dirección de correo asociada al usuario del que se ha introducido el login, así como la contraseña para instalar dicho certificado.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=15cm, height=8cm, keepaspectratio]{img/image08.png}
 	\caption{Ejecución de script}
 	\label{fig:image08}
 \end{figure}
 
-La Figura 5.8 muestra lo que aparece por pantalla cuando se ejecuta el script de generación de certificado, solicitando por pantalla el login del usuario al que se le quiere generar y enviar dicho certificado.
+La figura~\ref{fig:image08} muestra lo que aparece por pantalla cuando se ejecuta el script de generación de certificado, solicitando por pantalla el login del usuario al que se le quiere generar y enviar dicho certificado.
 
 \begin{figure}
 	\centering
@@ -879,30 +875,30 @@ La Figura 5.8 muestra lo que aparece por pantalla cuando se ejecuta el script de
 	\label{fig:image10}
 \end{figure}
 
-En las Figuras 5.9 y 5.10 se pueden ver los correos que envía el propio script adjuntando el certificado en uno de ellos, y la contraseña para instalar dicho certificado en otro. Esta información se envía en correos separados por si, en el hipotético caso de que se extraviaran los correos, cada correo por separa no se pudiera utilizar.
+En la figura~\ref{fig:image09} y figura~\ref{fig:image10} se pueden ver los correos que envía el propio script adjuntando el certificado en uno de ellos, y la contraseña para instalar dicho certificado en otro. Esta información se envía en correos separados por si, en el hipotético caso de que se extraviaran los correos, cada correo por separa no se pudiera utilizar.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image11.png}
 	\caption{Certificado en la CA}
 	\label{fig:image11}
 \end{figure}
 
-En la Figura 5.11 aparece la Central Administration donde aparecen todos los certificados generados y se realza el certificado que acaba de generar el script.
+En la figura~\ref{fig:image11} aparece la Central Administration donde aparecen todos los certificados generados y se realza el certificado que acaba de generar el script.
 \\
 
 \item Tarea Copy-SPItems.ps1
 
 En este ejemplo se comprueba que, teniendo una lista de Sharepoint vacía, tras ejecutar el script, el cual nos solicita el nombre de la lista origen y la lista destino, se copian los datos de la lista destino en la lista origen.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=17cm, keepaspectratio]{img/image12.png}
+	\includegraphics[width=17cm, keepaspectratio]{img/ListaSPvacia.png}
 	\caption{Lista Sharepoint destino}
-	\label{fig:image12}
+	\label{fig:ListaSPvacia}
 \end{figure}
 
-En la Figura 5.12 se muestra la lista destino, vacía antes de ejecutar el script.
+En la figura~\ref{fig:ListaSPvacia} se muestra la lista destino, vacía antes de ejecutar el script.
 
 \begin{figure}
 	\centering
@@ -911,7 +907,7 @@ En la Figura 5.12 se muestra la lista destino, vacía antes de ejecutar el scrip
 	\label{fig:image13}
 \end{figure}
 
-En la Figura 5.13 se muestra la lista origen, de la que se copiarán los ítems
+En la figura~\ref{fig:image13} se muestra la lista origen, de la que se copiarán los ítems
 
 \begin{figure}
 	\centering
@@ -924,26 +920,26 @@ Cuando se ejecuta el script, se pide por pantalla el nombre de la lista de la qu
 
 \begin{figure}
 	\centering
-	\includegraphics[width=17cm, keepaspectratio]{img/image15.png}
+	\includegraphics[width=17cm, keepaspectratio]{img/ListaSPllena.png}
 	\caption{Lista Sharepoint destino tras ejecutar el script}
-	\label{fig:image15}
+	\label{fig:ListaSPllena}
 \end{figure}
 
-En la Figura 5.15 vemos cómo se ha rellenado la lista que inicialmente estaba vacía.
+En la figura~\ref{fig:ListaSPllena} vemos cómo se ha rellenado la lista que inicialmente estaba vacía.
 \\
 
 \item Tarea Delete-SPItems.ps1
 
 Con este ejemplo se comprueba que, teniendo una lista de Sharepoint llena, tras ejecutar el script en el que se le indica en el código el nombre de la lista que queremos vaciar, dicha lista queda limpia sin ningún ítem. Este script muestra por pantalla el número de ítems que contiene la lista y saca por pantalla una traza por cada ítem que va eliminando.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=17cm, keepaspectratio]{img/image15.png}
 	\caption{Lista Sharepoint original rellena}
 	\label{fig:image15}
 \end{figure}
 
-La Figura 5.16 muestra la lista original llena, antes de ejecutar el script de borrado.
+La figura~\ref{fig:image15} muestra la lista original llena, antes de ejecutar el script de borrado.
 
 \begin{figure}
 	\centering
@@ -952,7 +948,7 @@ La Figura 5.16 muestra la lista original llena, antes de ejecutar el script de b
 	\label{fig:image16}
 \end{figure}
 
-Es la Figura 5.17 se ve la ejecución del script, mostrando la línea de código donde se modifica el nombre de la lista que se quiere vaciar (línea 26 del script). En la consola de Powershell vemos una traza por cada ítem eliminado para ir comprobando que el script se está ejecutando correctamente.
+Es la figura~\ref{fig:image16} se ve la ejecución del script, mostrando la línea de código donde se modifica el nombre de la lista que se quiere vaciar (línea 26 del script). En la consola de Powershell vemos una traza por cada ítem eliminado para ir comprobando que el script se está ejecutando correctamente.
 
 \begin{figure}
 	\centering
@@ -961,7 +957,7 @@ Es la Figura 5.17 se ve la ejecución del script, mostrando la línea de código
 	\label{fig:image12}
 \end{figure}
 
-La Figura 5.18 muestra la lista tras ejecutar el script. Se puede comprobar que se han eliminado los ítems de ella.
+La figura~\ref{fig:image12} muestra la lista tras ejecutar el script. Se puede comprobar que se han eliminado los ítems de ella.
 
 \end{itemize}
 
